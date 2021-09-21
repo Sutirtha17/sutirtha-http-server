@@ -80,7 +80,7 @@ app.get('/uuid', (req, res) => {
 });
 
 app.get('/status/:statusCode', (req, res) => {
-  res.status(req.params.statusCode).send(`<h1>${req.params.statusCode}</h1>`);
+  res.sendStatus(req.params.statusCode);
 });
 
 app.get('/delay/:delayTime', middleware, (req, res) => {
@@ -93,6 +93,10 @@ app.get('/delay/:delayTime', middleware, (req, res) => {
       res.status(404).send(`<h1>Please give a proper delay Time!</h1>`);
     }
   }, delayTime * 1000);
+});
+
+app.get('*', (req, res) => {
+  res.sendStatus(404);
 });
 
 app.listen(3000, () => {
