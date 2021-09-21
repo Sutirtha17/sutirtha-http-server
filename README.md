@@ -1,6 +1,6 @@
-# http-server
+# express-server
 
-This project is about creating a http server in nodejs and doing some tasks using server.
+This project is about creating an express server in nodejs and doing some tasks using server.
 
 ## Installations
 
@@ -21,7 +21,7 @@ This project is about creating a http server in nodejs and doing some tasks usin
 ### 4. Clone the repository :
 
 ```sh
-git clone https://github.com/Sutirtha17/sutirtha-http-server.git
+git clone -b express https://github.com/Sutirtha17/sutirtha-http-server.git
 ```
 
 ### 5. Go to the working directory
